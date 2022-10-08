@@ -14,12 +14,14 @@ public class Main {
             System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей.");
         }
 
+        System.out.println();
+
         // Задание 1, Задача 2.
         System.out.println("Задание 1, Задача 2.");
 
         int n = 0;
-        while (n < 10){
-            n = n+1;
+        while (n < 10) {
+            n = n + 1;
             System.out.print(n + " ");
         }
         System.out.println();
@@ -42,5 +44,63 @@ public class Main {
             year = year + 1;
             System.out.println("Год " + year + " численность населения составит " + totalPopulationY + " человек.");
         }
+        System.out.println();
+
+        // Задание 2, Задача 1.
+        System.out.println("Задание 2, Задача 1.");
+
+        int deposit = 15_000; // Первоначальная сумма
+        int startDeposit = 15_000;
+        int q = 0;
+        while (startDeposit <= 12_000_000) {
+            startDeposit = startDeposit + deposit * 7 / 100;
+            q = q + 1;
+            System.out.println("Месяц " + q + " сумма накоплений " + startDeposit + " рублей.");
+        }
+        System.out.println();
+
+
+        // Задание 2, Задача 2.
+        System.out.println("Задание 2, Задача 2.");
+
+        int depositV = 15_000; // Первоначальная сумма
+        int startDepositV = 15_000;
+        int x = 0;
+        while (startDepositV <= 12_000_000) {
+            startDepositV = startDepositV + depositV * 7 / 100;
+            x = x + 1;
+            if (x % 6 == 0) {
+                System.out.println("Месяц " + x + " сумма накоплений " + startDepositV + " рублей.");
+            }
+        }
+        System.out.println();
+
+
+        // Задание 2, Задача 3.
+        System.out.println("Задание 2, Задача 3.");
+
+        int depositvS = 15_000; // Первоначальная сумма
+        int startDepositVS = 15_000;
+        int t = 0;
+        while (t <= 108) {
+            startDepositVS = startDepositVS + depositvS * 7 / 100;
+            t = t + 1;
+            if (t % 6 == 0) {
+                System.out.println("Месяц " + t + " сумма накоплений " + startDepositVS + " рублей.");
+            }
+        }
+
+        System.out.println();
+
+        // Задание 2, Задача 4.
+        System.out.println("Задание 2, Задача 4.");
+
+        int friday = 7;
+        int firstFriday = 1;
+        for (; firstFriday < 31; firstFriday = firstFriday + friday) {
+
+                System.out.println("Сегодня пятница, " + firstFriday + "-ое число. Необходимо подготовить отчет");
+            }
+
+        }
     }
-}
