@@ -101,6 +101,29 @@ public class Main {
 
                 System.out.println("Сегодня пятница, " + firstFriday + "-ое число. Необходимо подготовить отчет");
             }
+        System.out.println();
 
+        // Задание 3, Задача 1.
+        System.out.println("Задание 3, Задача 1.");
+
+        int years = 1817;
+        int yearComet = 79;
+        int yearFinishCalculation = 2117;
+        while (years <= yearFinishCalculation){
+            years = years + yearComet;
+            System.out.println("Комета рядом с землей " + years + " году.");
+        }
+        System.out.println();
+
+        // Задание 3, Задача 2.
+        System.out.println("Задание 3, Задача 2.");
+
+        int task = 2;
+        int part = 1;
+        int w = 0;
+        while (w < task * 10){
+            w = w + 2;
+            System.out.println(task + " * " + part++ + " = " + w);
+        }
         }
     }
