@@ -27,5 +27,20 @@ public class Main {
         for (int j = 10; j > 0; j--) {
             System.out.print(j + " ");
         }
+        System.out.println();
+
+        // Задание 1, Задача 3.
+        System.out.println("Задание 1, Задача 3.");
+
+        int totalPopulationY = 12_000_000; // Численность города Y
+        int born = totalPopulationY / 1000 * 17; // Рождаемость 17 человек на 1000 человек
+        int died = totalPopulationY / 1000 * 8;  // Смертность 8 человек на 1000 человек
+        int grownPopulationY = born - died; // Прирост ежегодный
+        int year = 0;
+        while (year < 10) {
+            totalPopulationY = totalPopulationY + grownPopulationY;
+            year = year + 1;
+            System.out.println("Год " + year + " численность населения составит " + totalPopulationY + " человек.");
+        }
     }
 }
