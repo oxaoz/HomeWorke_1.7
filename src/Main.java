@@ -106,9 +106,9 @@ public class Main {
         // Задание 3, Задача 1.
         System.out.println("Задание 3, Задача 1.");
 
-        int yearsPast = 2022 - 200;
+        int yearsPast = 2017 - 200;
         int yearComet = 79;
-        int yearFinishCalculation = 2022 + 100;
+        int yearFinishCalculation = 2017 + 100;
         while (yearsPast <= yearFinishCalculation){
             yearsPast = yearsPast + yearComet;
             System.out.println("Комета рядом с землей " + yearsPast + " году.");
