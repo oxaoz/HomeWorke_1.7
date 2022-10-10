@@ -106,12 +106,12 @@ public class Main {
         // Задание 3, Задача 1.
         System.out.println("Задание 3, Задача 1.");
 
-        int years = 1817;
+        int yearsPast = 2022 - 200;
         int yearComet = 79;
-        int yearFinishCalculation = 2117;
-        while (years <= yearFinishCalculation){
-            years = years + yearComet;
-            System.out.println("Комета рядом с землей " + years + " году.");
+        int yearFinishCalculation = 2022 + 100;
+        while (yearsPast <= yearFinishCalculation){
+            yearsPast = yearsPast + yearComet;
+            System.out.println("Комета рядом с землей " + yearsPast + " году.");
         }
         System.out.println();
 
@@ -119,11 +119,12 @@ public class Main {
         System.out.println("Задание 3, Задача 2.");
 
         int task = 2;
-        int part = 1;
+        int part = 0;
         int w = 0;
         while (w < task * 10){
+            part = part + 1;
             w = w + 2;
-            System.out.println(task + " * " + part++ + " = " + w);
+            System.out.println(task + " * " + part + " = " + w);
         }
         }
     }
