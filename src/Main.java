@@ -99,32 +99,35 @@ public class Main {
         int firstFriday = 1;
         for (; firstFriday < 31; firstFriday = firstFriday + friday) {
 
-                System.out.println("Сегодня пятница, " + firstFriday + "-ое число. Необходимо подготовить отчет");
-            }
+            System.out.println("Сегодня пятница, " + firstFriday + "-ое число. Необходимо подготовить отчет");
+        }
         System.out.println();
 
         // Задание 3, Задача 1.
         System.out.println("Задание 3, Задача 1.");
 
-        int yearsPast = 2017 - 200;
+        int yearsPast = 2022 - 200;
         int yearComet = 79;
-        int yearFinishCalculation = 2017 + 100;
-        while (yearsPast <= yearFinishCalculation){
-            yearsPast = yearsPast + yearComet;
-            System.out.println("Комета рядом с землей " + yearsPast + " году.");
+        int yearFinishCalculation = 2022 + 100;
+        for (int l = yearsPast; l < yearFinishCalculation; ++l) {
+            if (l % yearComet == 0) {
+                System.out.println("Комета рядом с землей " + l + " году.");
+            }
         }
+
         System.out.println();
 
-        // Задание 3, Задача 2.
+            // Задание 3, Задача 2.
         System.out.println("Задание 3, Задача 2.");
 
-        int task = 2;
-        int part = 0;
-        int w = 0;
-        while (w < task * 10){
-            part = part + 1;
-            w = w + 2;
-            System.out.println(task + " * " + part + " = " + w);
-        }
+
+            int task = 2;
+            int part = 0;
+            int w = 0;
+            while (w < task * 10) {
+                part = part + 1;
+                w = w + 2;
+                System.out.println(task + " * " + part + " = " + w);
+            }
         }
     }
