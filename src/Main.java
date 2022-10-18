@@ -109,7 +109,7 @@ public class Main {
         int yearsPast = 2022 - 200;
         int yearComet = 79;
         int yearFinishCalculation = 2022 + 100;
-        for (int l = yearsPast; l < yearFinishCalculation; ++l) {
+        for (int l = yearsPast; l < yearFinishCalculation; l++) {
             if (l % yearComet == 0) {
                 System.out.println("Комета рядом с землей " + l + " году.");
             }
